@@ -119,10 +119,10 @@ contract SupplyChain {
             seller: address(uint160(msg.sender)),
             buyer: address(uint160(address(0)))
         });
-        // 2. Increment the skuCount by one
-        skuCount += 1;
-        // 3. Emit the appropriate event
+        // 2. Emit the appropriate event
         emit LogForSale(skuCount);
+        // 3. Increment the skuCount by one
+        skuCount += 1;
         // 4. return true
         return true;
     }
